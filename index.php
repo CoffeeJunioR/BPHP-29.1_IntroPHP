@@ -22,9 +22,31 @@ if (is_bool($variable)) {
 } elseif (is_null($variable)) {
     $type = 'null';
 } else {
-  $type = 'other';
+    $type = 'other';
 }
 
 echo "type is $type\n";
 echo "### ###\n";
 echo "\n";
+
+echo "Task 4\n";
+
+echo "Этот файл: " . __FILE__ . "\n";
+echo "Эта строка: " . __LINE__ . "\n";
+
+echo "### ###\n";
+echo "\n";
+
+echo "Task 5\n";
+
+$heredoc_string = <<<EOT
+Это
+многострочная строка,
+созданная с использованием синтаксиса heredoc.
+Она может содержать переменные $a and $b.
+EOT;
+
+echo $heredoc_string;
+
+echo "### ###\n";
+?>
